@@ -154,7 +154,7 @@ class FilmSpider(scrapy.Spider):
         film['url'] = response.url
         
         
-        
+        #添加测试
         #磁力
         strst=response.xpath("//script[contains(.,'gid')]//text()").extract()[0].encode('utf-8')
         e1=strst.index('=')
